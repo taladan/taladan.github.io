@@ -1,165 +1,187 @@
-# taladan.github.io
-Learning python with Evennia, github, pycharm and more!  I explore the thoughts and issues behind my code here.
-
-This is what I'm currently working on
-
-#### Taladan's Macros
-> @b (blk) - insert ">" at head of line
-> @c (chkbx) - insert "- [ ] " at head of line
-> @v (blkchkbx) - insert "> - [ ] " at head of line
-
-
-- [ ] fix returns in cmdjobs
-> * _action_handler
-> * all_jobs
-> * _add_msg
-> * _set_job_number
-> * set_job
-> * table
-
-#### Bucket recode:
----
-> * Bucket should hold the method for creation with Bucket.create()
-
-#### Job object:
-
-Ideas:
----
-* Messages only belong to a unique object type Job()
-* "Reply" functionality appends messages to extant messages
-
-> Reply structure:
-> +job/reply Job/id=message
-
-The job will be the listing (index + 1) of the job in the order of self.jobs_list
-
-#### Tiered level commenting system:
-* Each message should have a unique id (hash)
-* Comment children can be handled via tags.
-
-#### Access:
-Players who run factions should be able to be tagged as "BucketAdmin" category:"jobs"
-and be allowed to administer just that bucket for faction stuff...perhaps a jobs
-subsystem for guilds or factions so they can separate issues?
-
-Need hooks so that when a person is added to a faction the addition to the job/bbsys
-can be automagic.
-
-> #### Anomaly stuff:
-> Jobs has a tiered access structure. By changing who has access to
-> various commands, you can selectively allow players like builders into the
-> system so they can work. The access locks are on the bucket object.
-> Bucket access locks are stored at the bucket level.
->
->> HAS_ACCESS: Return TRUE if a player can access the +jobs system.
->>
->> ADD_ACCESS:      Returns True if a player can use the /add command.
->> APPROVE_ACCESS:  Returns True if a player can /approve jobs.
->> COMPLETE_ACCESS: Returns True if a player can /complete jobs.
->> CREATE_ACCESS:   Returns True if a player can use the /create command.
->> DENY_ACCESS:     Returns True if a player can /deny jobs.
->> EDIT_ACCCESS:    Returns True if a player can use the /edit command.
->> GIVE_ACCESS:     Returns True if a player can use +bucket/access.
->> LOG_ACCESS:      Returns True if a player can /log a job.
->> MAIL_ACCESS:     Returns True if a player can /query and /mail.
->> STATS_ACCESS:    Returns True if a player can pull reports on the system.
->>
->> A player must pass HAS_ACCESS before the other locks are applied.
->>
->> Access to buckets are set at the bucket level (see 'baccess').
->> You can also restrict actions by bucket (see 'aaccess').
->>
->> Actions can be restricted by bucket. This allows you to customize the
->> available actions to, for instance, prevent jobs from being tampered
->> with in automated buckets. The format for this is:
->>
->> &<action code>>_ACCESS <bucket>>=<return 1 to access, 0 to deny>>
->>
->> The <action>>_ACCESS code allows for one argument: %0 == PlayerDB#.
->>
->> Example: If you do not want a job to ever be transferred out
->> of an automated XP bucket (not included) you can prevent
->> this behavior if you know the three-letter action code (in this
->> example, TRN):
->>
->> &TRN_ACCESS XP=0
->>
->> See also: access, codes
->>
->> Bucket access is set on the bucket itself, as the ACCESS attribute:
->>
->> &ACCESS <Bucket DB#>>=[switch(get(%0/RACE),VAMPIRE,1,0)]
->>
->> It should return True for access and False for no access.
-"""
-Feature request: CmdJobs test suite
-- [ ] Unit testing
-
-> * Jobs
->    - [ ] approve
->    - [ ] assign_job
->    - [ ] assign
->    - [ ] catchup
->    - [ ] checkin
->    - [ ] clean
->    - [ ] credits
->    - [ ] checkout
->    - [ ] claim
->    - [ ] clone
->    - [ ] complete
->    - [ ] create - In progress
->    - [ ] delete
->    - [ ] deny
->    - [ ] due
->    - [ ] edit
->    - [ ] esc
->    - [ ] help
->    - [ ] joblist
->    - [ ] last
->    - [ ] list_untag
->    - [ ] list
->    - [ ] lock_job
->    - [ ] log
->    - [ ] mail
->    - [ ] merge
->    - [ ] overdue
->    - [ ] player_tag
->    - [ ] pri
->    - [ ] publish
->    - [ ] query
->    - [ ] rename
->    - [ ] reports
->    - [ ] search
->    - [ ] select
->    - [ ] set
->    - [ ] sort
->    - [ ] source
->    - [ ] summary
->    - [ ] sumset
->    - [ ] tag
->    - [ ] trans
->    - [ ] unlock
->    - [ ] untag
->    - [ ] who
-
-Issue: Feature Request: Buckets test suite
-> * Buckets
-
-Issue: Feature Request: Jgroups test suite
-> * Jgroups
->
->
-
-Todo:
-=====
-
-### Questions for staff
-> - [ ] Ask Beag/Bolide about what the exact names of the command syntax should be:
->> #### options
->> - +command/action lh.Target/lh.action = rh.Target/rh.action
->> - +command/verb lh.noun/lh.verb = rh.noun/rh.verb
-
-### Research issues
-> - [ ]
-> - [ ]
-
+<html>
+<head>
+<title>index.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: #d0d0d0; font-weight: normal; font-style: normal; }
+.s0 { color: rgb(255,255,255); }
+.s1 { color: rgb(216,216,216); }
+.s2 { color: rgb(255,238,128); font-weight: bold; }
+.s3 { color: rgb(191,164,164); }
+</style>
+</head>
+<BODY BGCOLOR="#2240">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+index.html</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0"># taladan.github.io 
+Learning python with Evennia, github, pycharm and more!  I explore the thoughts and issues behind my code here. 
+ 
+This is what I'm currently working on 
+ 
+#### Taladan's Macros 
+&gt; @b (blk) - insert &quot;&gt;&quot; at head of line 
+&gt; @c (chkbx) - insert &quot;- [ ] &quot; at head of line 
+&gt; @v (blkchkbx) - insert &quot;&gt; - [ ] &quot; at head of line 
+ 
+ 
+- [ ] fix returns in cmdjobs 
+&gt; * _action_handler 
+&gt; * all_jobs 
+&gt; * _add_msg 
+&gt; * _set_job_number 
+&gt; * set_job 
+&gt; * table 
+ 
+#### Bucket recode: 
+--- 
+&gt; * Bucket should hold the method for creation with Bucket.create() 
+ 
+#### Job object: 
+ 
+Ideas: 
+--- 
+* Messages only belong to a unique object type Job() 
+* &quot;Reply&quot; functionality appends messages to extant messages 
+ 
+&gt; Reply structure: 
+&gt; +job/reply Job/id=message 
+ 
+The job will be the listing (index + 1) of the job in the order of self.jobs_list 
+ 
+#### Tiered level commenting system: 
+* Each message should have a unique id (hash) 
+* Comment children can be handled via tags. 
+ 
+#### Access: 
+Players who run factions should be able to be tagged as &quot;BucketAdmin&quot; category:&quot;jobs&quot; 
+and be allowed to administer just that bucket for faction stuff...perhaps a jobs 
+subsystem for guilds or factions so they can separate issues? 
+ 
+Need hooks so that when a person is added to a faction the addition to the job/bbsys 
+can be automagic. 
+ 
+&gt; #### Anomaly stuff: 
+&gt; Jobs has a tiered access structure. By changing who has access to 
+&gt; various commands, you can selectively allow players like builders into the 
+&gt; system so they can work. The access locks are on the bucket object. 
+&gt; Bucket access locks are stored at the bucket level. 
+&gt; 
+&gt;&gt; HAS_ACCESS: Return TRUE if a player can access the +jobs system. 
+&gt;&gt; 
+&gt;&gt; ADD_ACCESS:      Returns True if a player can use the /add command. 
+&gt;&gt; APPROVE_ACCESS:  Returns True if a player can /approve jobs. 
+&gt;&gt; COMPLETE_ACCESS: Returns True if a player can /complete jobs. 
+&gt;&gt; CREATE_ACCESS:   Returns True if a player can use the /create command. 
+&gt;&gt; DENY_ACCESS:     Returns True if a player can /deny jobs. 
+&gt;&gt; EDIT_ACCCESS:    Returns True if a player can use the /edit command. 
+&gt;&gt; GIVE_ACCESS:     Returns True if a player can use +bucket/access. 
+&gt;&gt; LOG_ACCESS:      Returns True if a player can /log a job. 
+&gt;&gt; MAIL_ACCESS:     Returns True if a player can /query and /mail. 
+&gt;&gt; STATS_ACCESS:    Returns True if a player can pull reports on the system. 
+&gt;&gt; 
+&gt;&gt; A player must pass HAS_ACCESS before the other locks are applied. 
+&gt;&gt; 
+&gt;&gt; Access to buckets are set at the bucket level (see 'baccess'). 
+&gt;&gt; You can also restrict actions by bucket (see 'aaccess'). 
+&gt;&gt; 
+&gt;&gt; Actions can be restricted by bucket. This allows you to customize the 
+&gt;&gt; available actions to, for instance, prevent jobs from being tampered 
+&gt;&gt; with in automated buckets. The format for this is: 
+&gt;&gt; 
+&gt;&gt; &amp;</span><span class="s1">&lt;</span><span class="s2">action </span><span class="s3">code</span><span class="s1">&gt;</span><span class="s0">&gt;_ACCESS </span><span class="s1">&lt;</span><span class="s2">bucket</span><span class="s1">&gt;</span><span class="s0">&gt;=</span><span class="s1">&lt;</span><span class="s2">return </span><span class="s3">1 to access, 0 to deny</span><span class="s1">&gt;</span><span class="s0">&gt; 
+&gt;&gt; 
+&gt;&gt; The </span><span class="s1">&lt;</span><span class="s2">action</span><span class="s1">&gt;</span><span class="s0">&gt;_ACCESS code allows for one argument: %0 == PlayerDB#. 
+&gt;&gt; 
+&gt;&gt; Example: If you do not want a job to ever be transferred out 
+&gt;&gt; of an automated XP bucket (not included) you can prevent 
+&gt;&gt; this behavior if you know the three-letter action code (in this 
+&gt;&gt; example, TRN): 
+&gt;&gt; 
+&gt;&gt; &amp;TRN_ACCESS XP=0 
+&gt;&gt; 
+&gt;&gt; See also: access, codes 
+&gt;&gt; 
+&gt;&gt; Bucket access is set on the bucket itself, as the ACCESS attribute: 
+&gt;&gt; 
+&gt;&gt; &amp;ACCESS </span><span class="s1">&lt;</span><span class="s2">Bucket </span><span class="s3">DB#</span><span class="s1">&gt;</span><span class="s0">&gt;=[switch(get(%0/RACE),VAMPIRE,1,0)] 
+&gt;&gt; 
+&gt;&gt; It should return True for access and False for no access. 
+&quot;&quot;&quot; 
+Feature request: CmdJobs test suite 
+- [ ] Unit testing 
+ 
+&gt; * Jobs 
+&gt;    - [ ] approve 
+&gt;    - [ ] assign_job 
+&gt;    - [ ] assign 
+&gt;    - [ ] catchup 
+&gt;    - [ ] checkin 
+&gt;    - [ ] clean 
+&gt;    - [ ] credits 
+&gt;    - [ ] checkout 
+&gt;    - [ ] claim 
+&gt;    - [ ] clone 
+&gt;    - [ ] complete 
+&gt;    - [ ] create - In progress 
+&gt;    - [ ] delete 
+&gt;    - [ ] deny 
+&gt;    - [ ] due 
+&gt;    - [ ] edit 
+&gt;    - [ ] esc 
+&gt;    - [ ] help 
+&gt;    - [ ] joblist 
+&gt;    - [ ] last 
+&gt;    - [ ] list_untag 
+&gt;    - [ ] list 
+&gt;    - [ ] lock_job 
+&gt;    - [ ] log 
+&gt;    - [ ] mail 
+&gt;    - [ ] merge 
+&gt;    - [ ] overdue 
+&gt;    - [ ] player_tag 
+&gt;    - [ ] pri 
+&gt;    - [ ] publish 
+&gt;    - [ ] query 
+&gt;    - [ ] rename 
+&gt;    - [ ] reports 
+&gt;    - [ ] search 
+&gt;    - [ ] select 
+&gt;    - [ ] set 
+&gt;    - [ ] sort 
+&gt;    - [ ] source 
+&gt;    - [ ] summary 
+&gt;    - [ ] sumset 
+&gt;    - [ ] tag 
+&gt;    - [ ] trans 
+&gt;    - [ ] unlock 
+&gt;    - [ ] untag 
+&gt;    - [ ] who 
+ 
+Issue: Feature Request: Buckets test suite 
+&gt; * Buckets 
+ 
+Issue: Feature Request: Jgroups test suite 
+&gt; * Jgroups 
+&gt; 
+&gt; 
+ 
+Todo: 
+===== 
+ 
+### Questions for staff 
+&gt; - [ ] Ask Beag/Bolide about what the exact names of the command syntax should be: 
+&gt;&gt; #### options 
+&gt;&gt; - +command/action lh.Target/lh.action = rh.Target/rh.action 
+&gt;&gt; - +command/verb lh.noun/lh.verb = rh.noun/rh.verb 
+ 
+### Research issues 
+&gt; - [ ] 
+&gt; - [ ] 
+ 
+</span></pre>
+</body>
+</html>
