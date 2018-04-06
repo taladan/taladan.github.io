@@ -8,7 +8,6 @@ This is what I'm currently working on
 > @c (chkbx) - insert "- [ ] " at head of line
 > @v (blkchkbx) - insert "> - [ ] " at head of line
 
-
 - [ ] fix returns in cmdjobs
 > * _action_handler
 > * all_jobs
