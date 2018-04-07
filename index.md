@@ -158,7 +158,7 @@ Todo:
 >> - +command/action lh.Target/lh.action = rh.Target/rh.action
 >> - +command/verb lh.noun/lh.verb = rh.noun/rh.verb
 
+> - [ ] Beag - You said you wanted a seperate repo for the project development.  Should I just continue under pegasus and add Bolide as a contrib, should we keep it as a port Repo on EmblemOfEa's git, or should we create a completely new account with a new repo?
+
 ### Research issues
-> - [ ]
-> - [ ]
 
