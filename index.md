@@ -1,34 +1,37 @@
 # taladan.github.io
+
 Learning python with Evennia, github, pycharm and more!  I explore the thoughts and issues behind my code here.
 
-This is what I'm currently working on
+#### Relevant links
+> * [Todo list](todo.md)
+> * [Configurations](configs.md)
+> * [Questions](questions.md)
 
-#### Taladan's Macros
-> @b (blk) - insert ">" at head of line
-> @c (chkbx) - insert "- [ ] " at head of line
-> @v (blkchkbx) - insert "> - [ ] " at head of line
+What I'm currently working on
 
-- [ ] fix returns in cmdjobs
-> * _action_handler
-> * all_jobs
-> * _add_msg
-> * _set_job_number
-> * set_job
-> * table
+#### Research issues
+---
+(. . .)
+
+<br>
 
 #### Bucket recode:
 ---
-> * Bucket should hold the method for creation with Bucket.create()
+* Bucket should hold the method for creation with Bucket.create()
+
+> Haven't started on this yet
+
+<br>
 
 #### Job object:
+---
 
 Ideas:
----
 * Messages only belong to a unique object type Job()
 * "Reply" functionality appends messages to extant messages
 
-> Reply structure:
-> +job/reply Job/id=message
+ Reply structure:
+>+job/reply Job/id=message
 
 The job will be the listing (index + 1) of the job in the order of self.jobs_list
 
@@ -91,74 +94,3 @@ can be automagic.
 >>
 >> It should return True for access and False for no access.
 """
-Feature request: CmdJobs test suite
-- [ ] Unit testing
-
-> * Jobs
->    - [ ] approve
->    - [ ] assign_job
->    - [ ] assign
->    - [ ] catchup
->    - [ ] checkin
->    - [ ] clean
->    - [ ] credits
->    - [ ] checkout
->    - [ ] claim
->    - [ ] clone
->    - [ ] complete
->    - [ ] create - In progress
->    - [ ] delete
->    - [ ] deny
->    - [ ] due
->    - [ ] edit
->    - [ ] esc
->    - [ ] help
->    - [ ] joblist
->    - [ ] last
->    - [ ] list_untag
->    - [ ] list
->    - [ ] lock_job
->    - [ ] log
->    - [ ] mail
->    - [ ] merge
->    - [ ] overdue
->    - [ ] player_tag
->    - [ ] pri
->    - [ ] publish
->    - [ ] query
->    - [ ] rename
->    - [ ] reports
->    - [ ] search
->    - [ ] select
->    - [ ] set
->    - [ ] sort
->    - [ ] source
->    - [ ] summary
->    - [ ] sumset
->    - [ ] tag
->    - [ ] trans
->    - [ ] unlock
->    - [ ] untag
->    - [ ] who
-
-Issue: Feature Request: Buckets test suite
-> * Buckets
-
-Issue: Feature Request: Jgroups test suite
-> * Jgroups
->
->
-
-Todo:
-=====
-
-### Questions for staff
-> - [ ] Ask Beag/Bolide about what the exact names of the command syntax should be:
->> #### options
->> - +command/action lh.Target/lh.action = rh.Target/rh.action
->> - +command/verb lh.noun/lh.verb = rh.noun/rh.verb
-
-> - [ ] Beag - You said you wanted a seperate repo for the project development.  Should I just continue under pegasus and add Bolide as a contrib, should we keep it as a port Repo on EmblemOfEa's git, or should we create a completely new account with a new repo?
-
-### Research issues
-
