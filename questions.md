@@ -10,4 +10,6 @@ Here I put all of life's interesting questions.  Well, at least all the question
     >
     >3. something else?
 
+- [ ] Beag/Bolide How often do you guys use the +jgroups functionality of the jobs system?
+
 - [ ] Beag - You said you wanted a seperate repo for the project development.  Should I just continue under pegasus and add Bolide as a contrib, should we keep it as a port Repo on EmblemOfEa's git, or should we create a completely new account with a new repo?

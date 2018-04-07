@@ -23,6 +23,17 @@
 
 #### Jobs test suite *
 * Jobs *
+    - syntax to remember:
+    > `super(CommandTest, self).setUp()`
+    > `self.assertIsequal()`
+    > `self.call(command, "", "expected return")`
+
+##### Current progress:
+* 04-07-18, (18:52) - testing suite setUp, tearDown, creation test complete
+
+##### Functionality to test:
+> - [x] setUp ✓
+> - [x] tearDown ✓
 > - [ ] approve
 > - [ ] assign_job
 > - [ ] assign
@@ -34,7 +45,7 @@
 > - [ ] claim
 > - [ ] clone
 > - [ ] complete
-> - [ ] create \*
+> - [x] create ✓
 > - [ ] delete
 > - [ ] deny
 > - [ ] due

@@ -23,7 +23,7 @@ What I'm currently working on
 
 <br>
 
-#### Job object:
+#### Job code:
 ---
 
 Ideas:
@@ -94,3 +94,53 @@ can be automagic.
 >>
 >> It should return True for access and False for no access.
 """
+
+#### CmdJob code
+
+# Cmd stuff
+* def _approve(self, jobid, comment):
+* def _assign(self, jobid, player=None):
+* def _catchup(self):
+* def _checkin(self, jobid):
+* def _clean(self):
+* def _credits(self):
+* def _checkout(self, jobid):
+* def _claim(self, jobid):
+* def _clone(self, jobid):
+* def _complete(self, jobid, comment):
+* def _create(self): \*
+> Job creation rests on the job object itself through Job().create(bucket, title, text) cmdjobs handles testing before allowing creation.
+* def _delete(self, jobid):
+* def _deny(self, jobid, comment):
+* def _due(self, jobid, date=None):
+* def _edit(self, jobid, entryid, old, new):
+* def _esc(self, jobid, priority):
+* def _help(self, jobid):
+* def _joblist(self, *args, **kwargs):
+* def _last(self, jobid, num):
+* def _list_untag(self, jobid, player_list):
+* def _list(self, bucket):
+* def _lock_job(self, jobid):
+* def _log(self, jobid):
+* def _mail(self, jobid, message):
+* def _merge(self, source, destination):
+* def _overdue(self):
+* def _player_tag(self, jobid, player):
+* def _pri(self):
+* def _publish(self, jobid, comment):
+* def _query(self, player_list, title, query):
+* def _rename(self, jobid, name):
+* def _reports(self, report=None):
+* def _search(self, pattern):
+* def _select(self, expression):
+* def _set(self, jobid, status):
+* def _sort(self, sorttype):
+* def _source(self, jobid, player_list):
+* def _summary(self, jobid):
+* def _sumset(self, jobid, sumset, value):
+* def _tag(self, jobid):
+* def _trans(self, jobid, bucket):
+* def _unlock(self, jobid):
+* def _untag(self, jobid):
+* def _who(self, jobid):
+* def _assign_job(self):
