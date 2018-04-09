@@ -7,7 +7,11 @@ Learning python with Evennia, github, pycharm and more!  I explore the thoughts 
 > * [Configurations](configs.md)
 > * [Questions](questions.md)
 
-What I'm currently working on
+##### What I'm currently working on
+---
+
+04-08-18, (08:10) - So, I thought I was done with testing creation of jobs, turns out I wasn't.  I'm now working on testing the failure of job creation.  This testing process really makes you think differently about how your data is being used - at least it does for me.
+
 
 #### Research issues
 ---
