@@ -6,6 +6,8 @@
 ✓ | Finished
 <sup>_If there is nothing at the end of an item, that item has not yet been started._</sup>
 
+All settings files should have a SYSTEM variable that holds which system it's part of.
+
 ### Fixes -
 
 - [ ] fix returns in cmdjobs -

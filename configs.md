@@ -1,7 +1,7 @@
 # Config Settings
 Various configuration settings for different programs.
 
-#### Taladan's Vim Macros
+#### Vim Macros
 These are useful quick editing macros.  The only ones I have set up currently are for dealing with the boilerplate of markdown.
 
 Automatic todo list bullet points baybee!
@@ -10,4 +10,5 @@ Automatic todo list bullet points baybee!
 > - [ ]  @c (chkbx) - insert "- [ ] " at head of line
 > - [ ]  @v (blkchkbx) - insert "> - [ ] " at head of line
 
+#### Bash Aliases
 

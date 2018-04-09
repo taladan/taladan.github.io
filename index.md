@@ -7,8 +7,13 @@ Learning python with Evennia, github, pycharm and more!  I explore the thoughts 
 > * [Configurations](configs.md)
 > * [Questions](questions.md)
 
-What I'm currently working on
+##### What I'm currently working on
+---
 
+<sup>04-08-18, (08:10)</sup> - So, I thought I was done with testing creation of jobs, turns out I wasn't.  I'm now working on testing the failure of job creation.  This testing process really makes you think differently about how your data is being used - at least it does for me.
+
+
+<sup>04-09-18, (17:01)</sup> - Today I've set up Debian 9 on a virtual machine on my desktop to run as a development environment.  It runs faster and more dependably than my laptop, so I'm going to try and start using it during the day when I'm able to have some quiet time to program.  YAY NEW DEV ENVIRONMENT!  Oh, and the host name?  Bellerophon, for those of you in the know ;).
 #### Research issues
 ---
 (. . .)
