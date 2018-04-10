@@ -52,7 +52,7 @@ Functionality to test
    
 ##### inventory of functions
 
-`world.jobs.bucket.py` functions:
+`world.jobs.bucket.py`:
 ---
 - [ ] associated
 - [ ] at_channel_creation
@@ -71,7 +71,7 @@ Functionality to test
 - [ ] _total_jobs
  
 
-`world.jobs.cmdbuckets.py` functions:
+`world.jobs.cmdbuckets.py`:
 ---
 - [ ] switchparse
 - [ ] _access
@@ -96,7 +96,7 @@ Functionality to test
 - [ ] _set_timeout
 - [ ] _setting_validate
 
-`world.jobs.cmdjobs.py` functions:
+`world.jobs.cmdjobs.py`:
 ---
 - [ ] get_sortby
 - [ ] all_jobs
@@ -152,7 +152,7 @@ Functionality to test
 - [ ] _who
 
 
-`world.jobs.job.py` functions:
+`world.jobs.job.py`:
 ---
 - [ ] at_channel_creation
 - [ ] create
@@ -163,6 +163,7 @@ Functionality to test
 - [ ] _add_msg
 
 
-`world.utilities.pegasus_utilities` functions
+`world.utilities.pegasus_utilities`:
 ---
 - [x] hash
+- [x] parse_args 
