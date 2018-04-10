@@ -44,130 +44,124 @@ Functionality to test
 #### Bucket Recode
 
 - [ ] Maintain functionality of bucket
-- [ ] Gather inventory of functions
-   
-##### inventory of functions
-
->##### `world.jobs.bucket.py` functions:
->
->> ```
->> - [ ] associated
->> - [ ] at_channel_creation
->> - [x] create
->> - [ ] grant_access
->> - [ ] has_access
->> - [ ] has_jobs
->> - [ ] info
->> - [ ] jobids
->> - [ ] monitoring
->> - [ ] my_jobs
->> - [ ] per_player_actions
->> - [ ] remove_access
->> - [ ] set
->> - [ ] _pct_complete
->> - [ ] _total_jobs
->> ```
->
->##### `world.jobs.cmdbuckets.py` functions:
->
->>```
->> - [ ] switchparse
->> - [ ] _access
->> - [ ] _argparse
->> - [ ] _assign_bucket
->> - [ ] _bucket_table
->> - [ ] _can_access
->> - [ ] _check
->> - [ ] _check_actions
->> - [ ] _check_table
->> - [ ] _character_validate
->> - [ ] _create
->> - [ ] _delete
->> - [ ] _info
->> - [ ] _monitor
->> - [ ] _rename
->> - [ ] _parse
->> - [ ] _parse_right
->> - [ ] _parse_left
->> - [ ] _pass_lock
->> - [ ] _set
->> - [ ] _set_timeout
->> - [ ] _setting_validate
->>```
->##### `world.jobs.cmdjobs.py` functions:
->>```
->> - [ ] get_sortby
->> - [ ] all_jobs
->> - [ ] set_job
->> - [ ] table
->> - [ ] _act
->> - [ ] _all
->> - [ ] _approve
->> - [ ] _assign
->> - [ ] _catchup
->> - [ ] _clean
->> - [ ] _checkin
->> - [ ] _checkout
->> - [ ] _claim
->> - [ ] _clone
->> - [ ] _complete
->> - [ ] _create
->> - [ ] _credits
->> - [ ] _delete
->> - [ ] _deny
->> - [ ] _due
->> - [ ] _edit
->> - [ ] _esc
->> - [ ] _help
->> - [ ] _joblist
->> - [ ] _last
->> - [ ] _list
->> - [ ] _lock_job
->> - [ ] _log
->> - [ ] _mail
->> - [ ] _merge
->> - [ ] _overdue
->> - [ ] _pri
->> - [ ] _publish
->> - [ ] _query
->> - [ ] _rename
->> - [ ] _reports
->> - [ ] _search
->> - [ ] _select
->> - [ ] _set
->> - [ ] _sortby
->> - [ ] _source
->> - [ ] _summary
->> - [ ] _sumset
->> - [ ] _tag
->> - [ ] _trans
->> - [ ] _unlock
->> - [ ] _untag
->> - [ ] _who
->> - [ ] _action_handler
->> - [ ] _add_msg
->> - [ ] _assign_job
->> - [ ] _set_job_number
->>```
->
->##### `world.jobs.job.py` functions:
->
->>```
->> - [ ] at_channel_creation
->> - [ ] create
->> - [ ] info
->> - [ ] _getpos
->> - [ ] _update_actlist
->> - [ ] _all
->> - [ ] _add_msg
->>```
->
->##### `world.utilities.pegasus_utilities` functions
->
->>```
->> - [x] hash
->>```
-
+- [x] Gather inventory of functions
 - [ ] Clean documentation
 - [ ] Refactor internal functionality
 - [ ] Refactor CmdBuckets functionality
+   
+##### inventory of functions
+
+`world.jobs.bucket.py` functions:
+---
+- [ ] associated
+- [ ] at_channel_creation
+- [x] create
+- [ ] grant_access
+- [ ] has_access
+- [ ] has_jobs
+- [ ] info
+- [ ] jobids
+- [ ] monitoring
+- [ ] my_jobs
+- [ ] per_player_actions
+- [ ] remove_access
+- [ ] set
+- [ ] _pct_complete
+- [ ] _total_jobs
+ 
+
+`world.jobs.cmdbuckets.py` functions:
+---
+- [ ] switchparse
+- [ ] _access
+- [ ] _argparse
+- [ ] _assign_bucket
+- [ ] _bucket_table
+- [ ] _can_access
+- [ ] _check
+- [ ] _check_actions
+- [ ] _check_table
+- [ ] _character_validate
+- [ ] _create
+- [ ] _delete
+- [ ] _info
+- [ ] _monitor
+- [ ] _rename
+- [ ] _parse
+- [ ] _parse_right
+- [ ] _parse_left
+- [ ] _pass_lock
+- [ ] _set
+- [ ] _set_timeout
+- [ ] _setting_validate
+
+`world.jobs.cmdjobs.py` functions:
+---
+- [ ] get_sortby
+- [ ] all_jobs
+- [ ] set_job
+- [ ] table
+- [ ] _act
+- [ ] _action_handler
+- [ ] _add_msg
+- [ ] _all
+- [ ] _approve
+- [ ] _assign
+- [ ] _assign_job
+- [ ] _catchup
+- [ ] _checkin
+- [ ] _checkout
+- [ ] _claim
+- [ ] _clean
+- [ ] _clone
+- [ ] _complete
+- [ ] _create
+- [ ] _credits
+- [ ] _delete
+- [ ] _deny
+- [ ] _due
+- [ ] _edit
+- [ ] _esc
+- [ ] _help
+- [ ] _joblist
+- [ ] _last
+- [ ] _list
+- [ ] _lock_job
+- [ ] _log
+- [ ] _mail
+- [ ] _merge
+- [ ] _overdue
+- [ ] _pri
+- [ ] _publish
+- [ ] _query
+- [ ] _rename
+- [ ] _reports
+- [ ] _search
+- [ ] _select
+- [ ] _set
+- [ ] _set_job_number
+- [ ] _sortby
+- [ ] _source
+- [ ] _summary
+- [ ] _sumset
+- [ ] _tag
+- [ ] _trans
+- [ ] _unlock
+- [ ] _untag
+- [ ] _who
+
+
+`world.jobs.job.py` functions:
+---
+- [ ] at_channel_creation
+- [ ] create
+- [ ] info
+- [ ] _getpos
+- [ ] _update_actlist
+- [ ] _all
+- [ ] _add_msg
+
+
+`world.utilities.pegasus_utilities` functions
+---
+- [x] hash
