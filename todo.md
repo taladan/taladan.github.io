@@ -1,45 +1,10 @@
-# Todo
-|key|Action|
-|---|------|
--|Planning
-\*|in progress
-✓ | Finished
-<sup>_If there is nothing at the end of an item, that item has not yet been started._</sup>
-
-All settings files should have a SYSTEM variable that holds which system it's part of.
-
-### Fixes \*
-
-- [ ] fix returns in cmdjobs \*
-> Jobs should be returning a dict object with a single key 'msg' in which it stores pertinent information being returned from a method.  The following methods need to be checked.
-
-#### Bucket Recode -
-
-- [ ] Maintain functionality of bucket
-- [ ] Gather inventory of functions
-- [ ] Clean documentation
-- [ ] Refactor internal functionality
-- [ ] Refactor CmdBuckets functionality
-
-* _action_handler
-* all_jobs
-* _add_msg
-* _set_job_number
-* set_job
-* table
-
-### Feature request: Test suites
-- [ ] Unit testing *
-> 1. Job() create method testing complete
 
 ---
 
-#### Jobs test suite *
-* Jobs *
-    - syntax to remember:
-    > `super(CommandTest, self).setUp()`
-    > `self.assertIsequal()`
-    > `self.call(command, "", "expected return")`
+##### syntax to remember:
+> `super(CommandTest, self).setUp()`
+> `self.assertIsequal()`
+> `self.call(command, "", "expected return")`
 
 ##### Current progress:
 * 04-07-18, (18:52) - testing suite setUp, tearDown, `Job().create` pass/fail tests complete
@@ -61,68 +26,148 @@ All settings files should have a SYSTEM variable that holds which system it's pa
 
 ___
 
-#### Functionality to test:
+###### Todo Key
+|key|Action|
+|---|------|
+-|Planning
+\*|in progress
+✓ | Finished
+<sup>_If there is nothing at the end of an item, that item has not yet been started._</sup>
 
-##### Job Object
-> - [x] setUp ✓
-> - [x] tearDown ✓
-> - [x] create ✓
-> - [ ] _getpos
-> - [ ] info
-> - [ ] _update_actlist
-> - [ ] _add_msg
+<sup>_All settings files should have a SYSTEM variable that holds which system it's part of._</sup>
 
-##### CmdJobs Object
 
-> - [ ] approve
-> - [ ] assign_job
-> - [ ] assign
-> - [ ] catchup
-> - [ ] checkin
-> - [ ] clean
-> - [ ] create
-> - [ ] credits
-> - [ ] checkout
-> - [ ] claim
-> - [ ] clone
-> - [ ] complete
-> - [ ] delete
-> - [ ] deny
-> - [ ] due
-> - [ ] edit
-> - [ ] esc
-> - [ ] help
-> - [ ] joblist
-> - [ ] last
-> - [ ] list_untag
-> - [ ] list
-> - [ ] lock_job
-> - [ ] log
-> - [ ] mail
-> - [ ] merge
-> - [ ] overdue
-> - [ ] player_tag
-> - [ ] pri
-> - [ ] publish
-> - [ ] query
-> - [ ] rename
-> - [ ] reports
-> - [ ] search
-> - [ ] select
-> - [ ] set
-> - [ ] sort
-> - [ ] source
-> - [ ] summary
-> - [ ] sumset
-> - [ ] tag
-> - [ ] trans
-> - [ ] unlock
-> - [ ] untag
-> - [ ] who
+Functionality to test
+===
 
-#### Buckets test suite -
-* Buckets -
 
-#### Jgroups test suite -
-* Jgroups -
+#### Bucket Recode
 
+- [ ] Maintain functionality of bucket
+- [ ] Gather inventory of functions
+   
+##### inventory of functions
+
+>##### `world.jobs.bucket.py` functions:
+>
+>> ```
+>> - [ ] associated
+>> - [ ] at_channel_creation
+>> - [x] create
+>> - [ ] grant_access
+>> - [ ] has_access
+>> - [ ] has_jobs
+>> - [ ] info
+>> - [ ] jobids
+>> - [ ] monitoring
+>> - [ ] my_jobs
+>> - [ ] per_player_actions
+>> - [ ] remove_access
+>> - [ ] set
+>> - [ ] _pct_complete
+>> - [ ] _total_jobs
+>> ```
+>
+>##### `world.jobs.cmdbuckets.py` functions:
+>
+>>```
+>> - [ ] switchparse
+>> - [ ] _access
+>> - [ ] _argparse
+>> - [ ] _assign_bucket
+>> - [ ] _bucket_table
+>> - [ ] _can_access
+>> - [ ] _check
+>> - [ ] _check_actions
+>> - [ ] _check_table
+>> - [ ] _character_validate
+>> - [ ] _create
+>> - [ ] _delete
+>> - [ ] _info
+>> - [ ] _monitor
+>> - [ ] _rename
+>> - [ ] _parse
+>> - [ ] _parse_right
+>> - [ ] _parse_left
+>> - [ ] _pass_lock
+>> - [ ] _set
+>> - [ ] _set_timeout
+>> - [ ] _setting_validate
+>>```
+>##### `world.jobs.cmdjobs.py` functions:
+>>```
+>> - [ ] get_sortby
+>> - [ ] all_jobs
+>> - [ ] set_job
+>> - [ ] table
+>> - [ ] _act
+>> - [ ] _all
+>> - [ ] _approve
+>> - [ ] _assign
+>> - [ ] _catchup
+>> - [ ] _clean
+>> - [ ] _checkin
+>> - [ ] _checkout
+>> - [ ] _claim
+>> - [ ] _clone
+>> - [ ] _complete
+>> - [ ] _create
+>> - [ ] _credits
+>> - [ ] _delete
+>> - [ ] _deny
+>> - [ ] _due
+>> - [ ] _edit
+>> - [ ] _esc
+>> - [ ] _help
+>> - [ ] _joblist
+>> - [ ] _last
+>> - [ ] _list
+>> - [ ] _lock_job
+>> - [ ] _log
+>> - [ ] _mail
+>> - [ ] _merge
+>> - [ ] _overdue
+>> - [ ] _pri
+>> - [ ] _publish
+>> - [ ] _query
+>> - [ ] _rename
+>> - [ ] _reports
+>> - [ ] _search
+>> - [ ] _select
+>> - [ ] _set
+>> - [ ] _sortby
+>> - [ ] _source
+>> - [ ] _summary
+>> - [ ] _sumset
+>> - [ ] _tag
+>> - [ ] _trans
+>> - [ ] _unlock
+>> - [ ] _untag
+>> - [ ] _who
+>> - [ ] _action_handler
+>> - [ ] _add_msg
+>> - [ ] _assign_job
+>> - [ ] _set_job_number
+>>```
+>
+>##### `world.jobs.job.py` functions:
+>
+>>```
+>> - [ ] at_channel_creation
+>> - [ ] create
+>> - [ ] info
+>> - [ ] _getpos
+>> - [ ] _update_actlist
+>> - [ ] _all
+>> - [ ] _add_msg
+>>```
+>
+>##### `world.utilities.pegasus_utilities` functions
+>
+>>```
+>> - [x] hash
+>>```
+
+- [ ] Clean documentation
+- [ ] Refactor internal functionality
+- [ ] Refactor CmdBuckets functionality
