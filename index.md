@@ -14,6 +14,7 @@ Learning python with Evennia, github, pycharm and more!  I explore the thoughts 
 
 
 <sup>04-09-18, (17:01)</sup> - Today I've set up Debian 9 on a virtual machine on my desktop to run as a development environment.  It runs faster and more dependably than my laptop, so I'm going to try and start using it during the day when I'm able to have some quiet time to program.  YAY NEW DEV ENVIRONMENT!  Oh, and the host name?  Bellerophon, for those of you in the know ;).
+
 #### Research issues
 ---
 (. . .)

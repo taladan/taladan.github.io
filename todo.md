@@ -8,10 +8,18 @@
 
 All settings files should have a SYSTEM variable that holds which system it's part of.
 
-### Fixes -
+### Fixes \*
 
-- [ ] fix returns in cmdjobs -
+- [ ] fix returns in cmdjobs \*
 > Jobs should be returning a dict object with a single key 'msg' in which it stores pertinent information being returned from a method.  The following methods need to be checked.
+
+#### Bucket Recode -
+
+- [ ] Maintain functionality of bucket
+- [ ] Gather inventory of functions
+- [ ] Clean documentation
+- [ ] Refactor internal functionality
+- [ ] Refactor CmdBuckets functionality
 
 * _action_handler
 * all_jobs
@@ -31,23 +39,44 @@ All settings files should have a SYSTEM variable that holds which system it's pa
     > `self.call(command, "", "expected return")`
 
 ##### Current progress:
-* 04-07-18, (18:52) - testing suite setUp, tearDown, creation test complete
+* 04-07-18, (18:52) - testing suite setUp, tearDown, `Job().create` pass/fail tests complete
+---
+* 04-09-18, (21:44) - Dev environment bellerophon set up for primary development.
+                      set up some preliminary test stuff for `CmdJobs().create` but it is not
+                      working yet.  I'm hoping now that I've got the primary development enviroment
+                      set up, I can speed up a little.
 
-##### Functionality to test:
+---
+04-09-18, (22:20) - Outline todo list for next session.  Started planning outline for Bucket/CmdBucket recode
+
+---
+
+#### Functionality to test:
+
+##### Job Object
 > - [x] setUp ✓
 > - [x] tearDown ✓
+> - [x] create ✓
+> - [ ] _getpos
+> - [ ] info
+> - [ ] _update_actlist
+> - [ ] _hashobj
+> - [ ] _add_msg
+
+##### CmdJobs Object
+
 > - [ ] approve
 > - [ ] assign_job
 > - [ ] assign
 > - [ ] catchup
 > - [ ] checkin
 > - [ ] clean
+> - [ ] create
 > - [ ] credits
 > - [ ] checkout
 > - [ ] claim
 > - [ ] clone
 > - [ ] complete
-> - [x] create ✓
 > - [ ] delete
 > - [ ] deny
 > - [ ] due
