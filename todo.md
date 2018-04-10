@@ -30,6 +30,9 @@ All settings files should have a SYSTEM variable that holds which system it's pa
 
 ### Feature request: Test suites
 - [ ] Unit testing *
+> 1. Job() create method testing complete
+
+---
 
 #### Jobs test suite *
 * Jobs *
@@ -40,13 +43,16 @@ All settings files should have a SYSTEM variable that holds which system it's pa
 
 ##### Current progress:
 * 04-07-18, (18:52) - testing suite setUp, tearDown, `Job().create` pass/fail tests complete
+
 ---
+
 * 04-09-18, (21:44) - Dev environment bellerophon set up for primary development.
                       set up some preliminary test stuff for `CmdJobs().create` but it is not
                       working yet.  I'm hoping now that I've got the primary development enviroment
                       set up, I can speed up a little.
 
 ---
+
 04-09-18, (22:20) - Outline todo list for next session.  Started planning outline for Bucket/CmdBucket recode
 
 ---
