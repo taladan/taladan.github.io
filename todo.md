@@ -25,6 +25,7 @@
 * 04-10-18, (11:56) - Gathered list of functions that currently exist within the scope of the jobs system.  Marked the few that I've worked on thus far, and organized my todo list accordingly.  Started some on refactoring buckets - `world.utilities.pegasus_utilities.py` is now a thing, and currently the only (TESTED!) method in there is hash - this will take two different types of strings (though they can be identical strings) and return a unique hash of those strings as an md5().hexdigest() string.  Centralized this so that all systems under pegasus can access the hash functionality if it needs to without having to do any spooky voodoo with requiring cross-system utilities.
 
 ___
+---
 
 ###### Todo Key
 |key|Action|
