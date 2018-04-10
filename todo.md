@@ -57,6 +57,10 @@ All settings files should have a SYSTEM variable that holds which system it's pa
 
 ---
 
+
+
+___
+
 #### Functionality to test:
 
 ##### Job Object
@@ -66,7 +70,6 @@ All settings files should have a SYSTEM variable that holds which system it's pa
 > - [ ] _getpos
 > - [ ] info
 > - [ ] _update_actlist
-> - [ ] _hashobj
 > - [ ] _add_msg
 
 ##### CmdJobs Object
