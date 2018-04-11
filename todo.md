@@ -30,9 +30,9 @@ ___
 ###### Todo Key
 |key|Action|
 |---|------|
--|Planning
-\*|in progress
-✓ | Finished
+|-|Planning|
+|\*|in progress|
+|✓ | Finished|
 <sup>_If there is nothing at the end of an item, that item has not yet been started._</sup>
 
 <sup>_All settings files should have a SYSTEM variable that holds which system it's part of._</sup>
@@ -64,8 +64,8 @@ Functionality to test
 - [ ] jobids
 - [ ] monitoring
 - [ ] my_jobs
-- [ ] per_player_actions
-- [ ] remove_access
+- [x] per_player_actions
+- [x] remove_access
 - [ ] set
 - [ ] _pct_complete
 - [ ] _total_jobs
