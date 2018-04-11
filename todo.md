@@ -28,11 +28,11 @@ ___
 ---
 
 ###### Todo Key
-|key|Action|
-|---|------|
-|-|Planning|
-|\*|in progress|
-|✓ | Finished|
+|key|Action     |
+|---|:---------:|
+|  -|Planning   |
+| \*|in progress|
+|  ✓| Finished  |
 <sup>_If there is nothing at the end of an item, that item has not yet been started._</sup>
 
 <sup>_All settings files should have a SYSTEM variable that holds which system it's part of._</sup>
