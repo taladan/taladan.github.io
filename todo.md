@@ -25,6 +25,13 @@
 * 04-10-18, (11:56) - Gathered list of functions that currently exist within the scope of the jobs system.  Marked the few that I've worked on thus far, and organized my todo list accordingly.  Started some on refactoring buckets - `world.utilities.pegasus_utilities.py` is now a thing, and currently the only (TESTED!) method in there is hash - this will take two different types of strings (though they can be identical strings) and return a unique hash of those strings as an md5().hexdigest() string.  Centralized this so that all systems under pegasus can access the hash functionality if it needs to without having to do any spooky voodoo with requiring cross-system utilities.
 
 ___
+
+* 04-12-18, (08:26) - Yesterday I posted on reddit and got some good response about how to become a better programmer.  If I keep using this as a blogging stage, I might have to set up a blog to work on - I find it helps me think to spitball in this type of forum.  So, there's been a few people expressing interest about helping with the project, this morning I'm going to be working on updating Standards on the wiki, refining what contributors need to do to get spun up with programming Pegasus - we're going to need some tutorials folks.  If I can get through that, I'd like to be doing some actual code work by noon :p.
+
+---
+
+
+
 ---
 
 ###### Todo Key
@@ -46,10 +53,10 @@ Functionality to test
 
 #### Bucket Recode
 
-- [ ] Maintain functionality of bucket
+- [ ] \* Maintain functionality of bucket
 - [x] Gather inventory of functions
-- [ ] Clean documentation
-- [ ] Refactor internal functionality
+- [ ] \* Clean documentation
+- [ ] \* Refactor internal functionality
 - [ ] Refactor CmdBuckets functionality
    
 ##### inventory of functions
@@ -57,17 +64,17 @@ Functionality to test
 `world.jobs.bucket.py`:
 ---
 - [ ] associated
-- [ ] at_channel_creation
+- [ ] \* at_channel_creation
 - [x] create
 - [ ] grant_access
-- [ ] has_access
+- [ ] \* has_access - needs testing: 04-12-18, (08:17)
 - [ ] has_jobs
 - [ ] info
 - [ ] jobids
 - [ ] monitoring
 - [ ] my_jobs
-- [x] per_player_actions
-- [x] remove_access
+- [ ] \* per_player_actions - needs testing: 04-12-18, (08:20)
+- [ ] \* remove_access - needs testing: 04-12-18, (08:22) 
 - [ ] set
 - [ ] _pct_complete
 - [ ] _total_jobs
@@ -85,14 +92,14 @@ Functionality to test
 - [ ] _check_actions
 - [ ] _check_table
 - [ ] _character_validate
-- [ ] _create
+- [ ] \* _create - needs testing
 - [ ] _delete
 - [ ] _info
 - [ ] _monitor
 - [ ] _rename
-- [ ] _parse
-- [ ] _parse_right
-- [ ] _parse_left
+- [ ] \* _parse - needs testing
+- [ ] _parse_right - possibly deprecated
+- [ ] _parse_left - possibly deprecated
 - [ ] _pass_lock
 - [ ] _set
 - [ ] _set_timeout
@@ -157,7 +164,7 @@ Functionality to test
 `world.jobs.job.py`:
 ---
 - [ ] at_channel_creation
-- [ ] create
+- [x] create - Tested out by Taladan March 18
 - [ ] info
 - [ ] _getpos
 - [ ] _update_actlist
@@ -167,5 +174,5 @@ Functionality to test
 
 `world.utilities.pegasus_utilities`:
 ---
-- [x] hash
-- [x] parse_args 
+- [x] hash - Tested out by Taladan March 18
+- [x] parse_args - Tested out by Taladan March 18
