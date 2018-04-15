@@ -28,9 +28,34 @@ ___
 
 * 04-12-18, (08:26) - Yesterday I posted on reddit and got some good response about how to become a better programmer.  If I keep using this as a blogging stage, I might have to set up a blog to work on - I find it helps me think to spitball in this type of forum.  So, there's been a few people expressing interest about helping with the project, this morning I'm going to be working on updating Standards on the wiki, refining what contributors need to do to get spun up with programming Pegasus - we're going to need some tutorials folks.  If I can get through that, I'd like to be doing some actual code work by noon :p.
 
+* 04-12-18, (12:11) - Finished [The Code Contributor's Manifesto](Contributor) as well as updating some of the [PSC](https://github.com/taladan/Pegasus/wiki/PSC----Pegasus-Style-Convention)
+
 ---
 
+* 04-15-18, (12:12) - Yesterday we worked on some stuff for the bucket recode.  I've decided that I am going to try out a menu driven system to see if the interface is a little easier to navigate as well as dealing with the entry of the variables on the backend into the database.  Some of the commands that exist currently on the CmdBucket file will be going away - they're not necessary and if I do decide to go back and add those commands back into the system for nostalgia's sake, it's still going to need a recode - that stuff is just manky.  
 
+* 04-15-18, (12:14) - Today I'm going to be continuing with the CmdBucket recode.  
+>- Currently I have the following methods done and waiting for testing:
+>    ```
+>    _get_input
+>    _assign_boards
+>    timeout
+>    name
+>    desc
+>    board
+>    ```
+>    
+>- We're going to be trying to get through these methods today:
+>
+>    ```
+>    group
+>    locked
+>    notify
+>    ```
+>    
+>I'd also like to get into testing of the methods in the new cmdbucket file today (and through it if we're really wanting to wish big).
+
+---
 
 ---
 
@@ -47,6 +72,14 @@ ___
 <sup>_All settings files should have a SYSTEM variable that holds which system it's part of._</sup>
 
 
+
+Needed project systems
+===
+#### IRC Bots
+Need a couple of these - working on setting one up to auto notify of pushes/requests to git
+(idea )Would like one to transmit messages from #pegasus-project to twitch chat channel and vice versa.
+
+
 Functionality to test
 ===
 
@@ -59,6 +92,15 @@ Functionality to test
 - [ ] \* Refactor internal functionality
 - [ ] Refactor CmdBuckets functionality
    
+   
+I think I want to do a menu based system for bucket creation instead of the seperate commands and switches.  It's a pain in the arse to have to recode, but I think it will simplify matters greatly both with creation and with handling the data on the back end.  Right now the data creation is just too absolutely spread out and doing things like setting completion boards, timeout, etc. shouldn't be optional...it should be included, easy to do and automatic. 04-13-18, (13:56) - Tal
+
+#### Things to remember:
+* [cmdset_mergetype](https://github.com/evennia/evennia/wiki/EvMenu) - This should control blocking within the menu system - may need to be able to implement submenus that block and release control back when they've executed.  If X then block_submenu(), else submenu().  Could use an @decorator for this possibly?? 
+
+
+Jobs needs a status list - states of being for the job - this will live on self.db.status, as a string value to be matched against a list of statuses.  Not able to be set by outside influence. 04-13-18, (14:04) - Tal
+
 ##### inventory of functions
 
 `world.jobs.bucket.py`:
