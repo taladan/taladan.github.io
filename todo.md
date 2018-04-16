@@ -57,6 +57,8 @@ ___
 
 ---
 
+04-15-18, (21:04) - Need to work on logging - check `world.utilties.pegasus_utilties.log` - Have to figure out a way to test this or we can't do special log sauce. - Tal
+
 ---
 
 ###### Todo Key
