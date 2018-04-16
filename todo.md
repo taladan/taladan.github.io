@@ -61,6 +61,10 @@ ___
 
 ---
 
+04-15-18, (22:10) - Tonight we worked on groups...may need to refactor name as groups exists in Evennia namespace already (alias to access permissions).  This shouldn't be a problem - don't want to call them 'factions' but we'll come up with a better name for it - talk to Beag, maybe she has some input.  `world.jobs.new_bucket.py` is kind of in a holding pattern until I can get groups nailed down a bit - buckets ties in with this system so I need to get at least the basic framework down before I dash on with the bucket recode.  Tomorrow I need to work on finishing the nodes in `world.groups.Group._create`. - Tal
+
+---
+
 ###### Todo Key
 |key|Action     |
 |---|:---------:|
