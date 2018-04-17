@@ -34,7 +34,7 @@ ___
 
 * 04-15-18, (12:12) - Yesterday we worked on some stuff for the bucket recode.  I've decided that I am going to try out a menu driven system to see if the interface is a little easier to navigate as well as dealing with the entry of the variables on the backend into the database.  Some of the commands that exist currently on the CmdBucket file will be going away - they're not necessary and if I do decide to go back and add those commands back into the system for nostalgia's sake, it's still going to need a recode - that stuff is just manky.  
 
-* 04-15-18, (12:14) - Today I'm going to be continuing with the CmdBucket recode.  
+* 04-15-18, (12:14) - Today I'm going to be continuing with the CmdBucket recode.   
 >- Currently I have the following methods done and waiting for testing:
 >    ```
 >    _get_input
