@@ -6,6 +6,7 @@ Learning python with Evennia, github, pycharm and more!  I explore the thoughts 
 > * [Todo list](todo.md)
 > * [Configurations](configs.md)
 > * [Questions](questions.md)
+> * [Ad for MU*'s](bbadvert.md)
 
 ##### What I'm currently working on
 ---
