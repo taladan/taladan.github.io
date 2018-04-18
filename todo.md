@@ -65,6 +65,14 @@ ___
 
 ---
 
+04-18-18, (07:45) - Yesterday we worked on Orgs - ties in to many other systems.  Got all of the nodes designed, not tested.  
+
+---
+
+
+
+---
+
 ###### Todo Key
 |key|Action     |
 |---|:---------:|
